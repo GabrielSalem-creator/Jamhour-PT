@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Models</title>
+    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='jamPT.ico') }}">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        header .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        header .create-model-btn {
+            background-color: #2575fc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        header .create-model-btn:hover {
+            background-color: #1a62cc;
+        }
+
+        header .back-home-btn {
+            background-color: #2575fc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        header .back-home-btn:hover {
+            background-color: #1a62cc;
+        }
+
+        .model-list-container {
+            width: 100%;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+
+        .model-list {
+            list-style: none;
+            width: 100%;
+            margin: 0;
+        }
+
+        .model-list li {
+            background-color: #1f1f1f;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .model-list li:hover {
+            background-color: #2575fc;
+        }
+
+        .model-name {
+            font-size: 1.3rem;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .model-name:hover {
+            color: #f0f0f0;
+        }
+
+        .button-group-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .view-btn, .delete-btn, .download-btn {
+            background-color: #f0f0f0;
+            color: #2575fc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-btn:hover, .delete-btn:hover, .download-btn:hover {
+            background-color: #2575fc;
+            color: white;
+        }
+
+        .delete-btn {
+            background-color: #ff4d4d; /* Red for delete button */
+        }
+
+        .delete-btn:hover {
+            background-color: #cc3d3d;
+        }
+
+        .download-btn {
+            background-color: #4caf50; /* Green for download button */
+        }
+
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Manage Models</h1>
+            <div class="button-group">
+                <a href="{{ url_for('home') }}" class="back-home-btn">Back to Home</a>
+                <a href="{{ url_for('create') }}" class="create-model-btn">Create Model</a>
+            </div>
+        </header>
+
+        <div class="model-list-container">
+            <ul class="model-list">
+                {% if models %}
+                    {% for model in models %}
+                    <li>
+                        <a href="#" class="model-name">{{ model.model_name }}</a>
+                        <div class="button-group-container">
+                            <!-- Edit Button -->
+                            <a href="{{ url_for('edit_model', model_name=model.model_name) }}" class="view-btn">Edit</a>
+
+                            <!-- Download Button -->
+                            <a href="{{ url_for('download_model', model_name=model.model_name) }}" class="download-btn">Download</a>
+
+                            <!-- Delete Button -->
+                            <form action="{{ url_for('manage_models') }}" method="POST" style="display:inline;">
+                                <input type="hidden" name="model_to_delete" value="{{ model.model_name }}">
+                                <button type="submit" class="delete-btn">Delete</button>
+                            </form>
+                        </div>
+                    </li>
+                    {% endfor %}
+                {% else %}
+                    <li>No models available.</li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

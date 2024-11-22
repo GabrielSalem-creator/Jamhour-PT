@@ -1,0 +1,802 @@
+[
+    {
+        "role": "user",
+        "content": "Diversify your investments to minimize risk."
+    },
+    {
+        "role": "user",
+        "content": "Invest only what you can afford to lose."
+    },
+    {
+        "role": "user",
+        "content": "Always research before investing in any asset."
+    },
+    {
+        "role": "user",
+        "content": "Understand the risks and rewards of each investment."
+    },
+    {
+        "role": "user",
+        "content": "Avoid emotional decisions when investing."
+    },
+    {
+        "role": "user",
+        "content": "Have a clear investment goal before starting."
+    },
+    {
+        "role": "user",
+        "content": "Regularly review and rebalance your portfolio."
+    },
+    {
+        "role": "user",
+        "content": "Invest for the long term, not for short-term gains."
+    },
+    {
+        "role": "user",
+        "content": "Avoid putting all your money in a single asset."
+    },
+    {
+        "role": "user",
+        "content": "Use dollar-cost averaging for volatile assets."
+    },
+    {
+        "role": "user",
+        "content": "Understand the power of compound interest."
+    },
+    {
+        "role": "user",
+        "content": "Consider the tax implications of your investments."
+    },
+    {
+        "role": "user",
+        "content": "Don\u2019t borrow money to invest unless you fully understand the risks."
+    },
+    {
+        "role": "user",
+        "content": "Stay updated on market trends and news."
+    },
+    {
+        "role": "user",
+        "content": "Have an emergency fund separate from your investments."
+    },
+    {
+        "role": "user",
+        "content": "Consider investing in index funds for steady growth."
+    },
+    {
+        "role": "user",
+        "content": "Know your risk tolerance and invest accordingly."
+    },
+    {
+        "role": "user",
+        "content": "Avoid trying to time the market."
+    },
+    {
+        "role": "user",
+        "content": "Consult a financial advisor for personalized advice."
+    },
+    {
+        "role": "user",
+        "content": "Never invest based solely on tips or hearsay."
+    },
+    {
+        "role": "user",
+        "content": "Rule 21: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 22: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 23: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 24: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 25: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 26: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 27: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 28: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 29: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 30: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 31: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 32: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 33: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 34: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 35: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 36: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 37: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 38: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 39: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 40: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 41: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 42: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 43: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 44: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 45: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 46: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 47: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 48: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 49: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 50: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 51: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 52: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 53: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 54: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 55: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 56: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 57: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 58: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 59: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 60: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 61: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 62: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 63: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 64: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 65: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 66: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 67: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 68: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 69: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 70: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 71: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 72: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 73: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 74: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 75: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 76: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 77: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 78: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 79: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 80: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 81: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 82: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 83: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 84: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 85: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 86: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 87: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 88: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 89: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 90: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 91: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 92: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 93: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 94: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 95: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 96: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 97: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 98: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 99: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 100: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 101: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 102: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 103: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 104: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 105: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 106: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 107: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 108: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 109: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 110: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 111: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 112: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 113: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 114: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 115: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 116: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 117: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 118: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 119: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 120: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 121: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 122: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 123: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 124: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 125: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 126: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 127: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 128: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 129: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 130: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 131: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 132: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 133: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 134: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 135: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 136: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 137: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 138: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 139: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 140: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 141: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 142: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 143: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 144: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 145: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 146: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 147: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 148: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 149: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 150: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 151: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 152: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 153: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 154: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 155: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 156: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 157: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 158: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 159: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 160: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 161: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 162: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 163: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 164: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 165: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 166: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 167: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 168: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 169: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 170: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 171: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 172: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 173: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 174: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 175: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 176: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 177: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 178: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 179: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 180: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 181: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 182: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 183: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 184: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 185: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 186: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 187: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 188: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 189: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 190: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 191: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 192: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 193: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 194: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 195: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 196: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 197: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 198: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 199: Custom investment principle."
+    },
+    {
+        "role": "user",
+        "content": "Rule 200: Custom investment principle."
+    }
+]

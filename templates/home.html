@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamhourPT - Home</title>
+    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='jamPT.ico') }}">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5059241821119554"
+     crossorigin="anonymous"></script>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Main Container */
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Section */
+        header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+header .button-group {
+    display: flex;
+    gap: 10px; /* Controls the spacing between buttons */
+}
+
+header .create-model-btn {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+header .create-model-btn:hover {
+    background-color: #1a62cc;
+}
+
+
+        /* Search Bar */
+        .search-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .search-container form {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-container input {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Model List Section */
+        .model-list-container {
+            width: 100%;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+
+        .model-list {
+            list-style: none;
+            width: 100%;
+            margin: 0;
+        }
+
+        .model-list li {
+            background-color: #1f1f1f;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .model-list li:hover {
+            background-color: #2575fc;
+        }
+
+        .model-name {
+            font-size: 1.3rem;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .model-name:hover {
+            color: #f0f0f0;
+        }
+
+        .view-btn {
+            background-color: #f0f0f0;
+            color: #2575fc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-btn:hover {
+            background-color: #2575fc;
+            color: white;
+        }
+
+        /* No Results Message */
+        .no-results {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<header>
+    <h1>Model Creator</h1>
+    <div class="button-group">
+        {% if session.get('admin') %}
+            <a href="{{ url_for('manage_models') }}" class="create-model-btn">Manage Models</a>
+            <a href="{{ url_for('logout') }}" class="create-model-btn" style="background-color: #f44336;">Logout</a>
+        {% else %}
+            <a href="{{ url_for('login') }}" class="create-model-btn">Admin Login</a>
+        {% endif %}
+    </div>
+</header>
+
+
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <form method="POST" action="/">
+                <input type="text" name="search" placeholder="Search models..." id="searchBar">
+            </form>
+        </div>
+
+        <h2>Available Models</h2>
+
+        <!-- Scrollable Model List -->
+        <div class="model-list-container" id="modelListContainer">
+            <ul class="model-list" id="modelList">
+                {% for model in models %}
+                    <li class="model-item">
+                        <a href="{{ url_for('chat', model_name=model['model_name']) }}" class="model-name">{{ model['model_name'] }}</a>
+                        <a href="{{ url_for('chat', model_name=model['model_name']) }}" class="view-btn" onclick="trackClick('{{ model['model_name'] }}')">View</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResultsMessage" style="display: none;">No models found.</div>
+    </div>
+
+    <script>
+        // Function to track model view clicks
+        function trackClick(modelName) {
+            fetch(`/click/${modelName}`, {
+                method: 'POST'
+            }).then(response => {
+                console.log('Click tracked for', modelName);
+            }).catch(error => {
+                console.error('Error tracking click:', error);
+            });
+        }
+
+        // Search Functionality
+        document.getElementById("searchBar").addEventListener("input", function() {
+            let query = this.value.toLowerCase();
+            let modelItems = document.querySelectorAll(".model-item");
+            let foundResults = false;
+
+            modelItems.forEach(item => {
+                let modelName = item.querySelector(".model-name").textContent.toLowerCase();
+                if (modelName.includes(query)) {
+                    item.style.display = "flex";
+                    foundResults = true;
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+            document.getElementById("noResultsMessage").style.display = foundResults ? "none" : "block";
+        });
+    </script>
+</body>
+</html>

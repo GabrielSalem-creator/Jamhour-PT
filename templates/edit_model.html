@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Model - {{ model_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">  <!-- Include your CSS file -->
+
+    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='jamPT.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Model: {{ model_name }}</h1>
+
+        <!-- Flash messages for success or error -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flash-messages">
+                    {% for category, message in messages %}
+                        <li class="{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="{{ url_for('edit_model', model_name=model_name) }}">
+            <div class="form-group">
+                <label for="content">Model Content:</label>
+                <textarea name="content" id="content" rows="10" cols="50">{{ model_data[1].content if model_data else '' }}</textarea>
+            </div>
+
+            <button type="submit">Update Model</button>
+        </form>
+
+        <br>
+        <b> <a href="{{ url_for('manage_models') }}" class="back-link">Back to Model Management</a></b>
+    </div>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            resize: vertical;
+            background-color: #1f1f1f;
+            color: white;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #1a62cc;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #2575fc;
+            font-size: 1.1rem;
+        }
+
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+
+        .flash-messages {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .flash-messages li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border-radius: 5px;
+        }
+
+        .flash-messages li.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .flash-messages li.warning {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .flash-messages li.info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
+</body>
+</html>
